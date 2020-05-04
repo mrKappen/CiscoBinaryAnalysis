@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configure xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ ConfigXMLSchema.xsd">
+  <title>Cisco AnyConnect Network Access Manager</title>
+  <file id="nam-install">
+    <default>true</default>
+    <description>NAM install logs</description>
+    <gui>
+      <label>_tr("NAM install logs")</label>
+      <file_type>log</file_type>
+    </gui>
+    <dart>
+      <required>false</required>
+	  <os opsys="win8">
+        <file_copy_action>
+          <action>
+            <loc>%TEMP%\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%WINDIR%\Temp\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="win7">
+        <file_copy_action>
+          <action>
+            <loc>%TEMP%\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%WINDIR%\Temp\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="vista">
+        <file_copy_action>
+          <action>
+            <loc>%TEMP%\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%WINDIR%\Temp\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="winxp">
+        <file_copy_action>
+          <action>
+            <loc>%TEMP%\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%WINDIR%\Temp\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="win2k3">
+        <file_copy_action>
+          <action>
+            <loc>%TEMP%\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%WINDIR%\Temp\anyconnect-nam-*.log</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+    </dart>
+  </file>
+  <file id="nam-profile">
+    <default>true</default>
+    <description>NAM Profiles</description>
+    <gui>
+      <label>_tr("NAM Profile")</label>
+      <file_type>log</file_type>
+    </gui>
+    <dart>
+      <required>false</required>
+	  <os opsys="win8">
+        <file_copy_action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.xml</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.dat</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="win7">
+        <file_copy_action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.xml</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.dat</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="vista">
+        <file_copy_action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.xml</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.dat</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="winxp">
+        <file_copy_action>
+          <action>
+            <loc>%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.xml</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.dat</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="win2k3">
+        <file_copy_action>
+          <action>
+            <loc>%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.xml</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\system\*.dat</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+    </dart>
+  </file>
+  <file id="nam-dmp">
+    <default>true</default>
+    <description>NAM Program Dump Files</description>
+    <gui>
+      <label>_tr("NAM Program Dump Files")</label>
+      <file_type>log</file_type>
+    </gui>
+    <dart>
+      <required>false</required>
+	  <os opsys="win8">
+        <file_copy_action>
+          <action>
+            <loc gather_newest="true">%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.dmp</loc>
+            <clear_log apply="true"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="win7">
+        <file_copy_action>
+          <action>
+            <loc gather_newest="true">%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.dmp</loc>
+            <clear_log apply="true"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="vista">
+        <file_copy_action>
+          <action>
+            <loc gather_newest="true">%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.dmp</loc>
+            <clear_log apply="true"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="winxp">
+        <file_copy_action>
+          <action>
+            <loc gather_newest="true">%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.dmp</loc>
+            <clear_log apply="true"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="win2k3">
+        <file_copy_action>
+          <action>
+            <loc gather_newest="true">%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.dmp</loc>
+            <clear_log apply="true"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+    </dart>
+  </file>
+  <file id="nam-logs">
+    <default>true</default>
+    <description>NAM application logs</description>
+    <gui>
+      <label>_tr("NAM application logs")</label>
+      <file_type>log</file_type>
+    </gui>
+    <dart>
+      <required>false</required>
+	  <os opsys="win8">
+        <file_copy_action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.cap</loc>
+            <clear_log apply="true"></clear_log>
+          </action>
+        </file_copy_action>
+        <use_extern_action>
+          <action>
+            <plugin></plugin>
+            <args>wineventlog.exe -d -l "Cisco AnyConnect Network Access Manager" -f %TEMP%\NetworkAccessManager.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.txt</temp_out>
+          </action>
+          <action>
+            <path>%WINDIR%\system32</path>
+            <args>wevtutil epl "Cisco AnyConnect Network Access Manager" %TEMP%\NetworkAccessManager.evtx</args>
+            <clear_log apply="true">wevtutil cl "Cisco AnyConnect Network Access Manager"</clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.evtx</temp_out>
+          </action>
+          <action>
+            <plugin></plugin>
+            <args>acnampkgplugin.exe -f %TEMP%\NetworkAccessManagerPlugin.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManagerPlugin.txt</temp_out>
+          </action>
+        </use_extern_action>
+      </os>
+      <os opsys="win7">
+        <file_copy_action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.cap</loc>
+            <clear_log apply="true"></clear_log>
+          </action>
+        </file_copy_action>
+        <use_extern_action>
+          <action>
+            <plugin></plugin>
+            <args>wineventlog.exe -d -l "Cisco AnyConnect Network Access Manager" -f %TEMP%\NetworkAccessManager.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.txt</temp_out>
+          </action>
+          <action>
+            <path>%WINDIR%\system32</path>
+            <args>wevtutil epl "Cisco AnyConnect Network Access Manager" %TEMP%\NetworkAccessManager.evtx</args>
+            <clear_log apply="true">wevtutil cl "Cisco AnyConnect Network Access Manager"</clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.evtx</temp_out>
+          </action>
+          <action>
+            <plugin></plugin>
+            <args>acnampkgplugin.exe -f %TEMP%\NetworkAccessManagerPlugin.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManagerPlugin.txt</temp_out>
+          </action>
+        </use_extern_action>
+      </os>
+      <os opsys="vista">
+        <file_copy_action>
+          <action>
+            <loc>%ProgramData%\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.cap</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+        <use_extern_action>
+          <action>
+            <plugin></plugin>
+            <args>wineventlog.exe -d -l "Cisco AnyConnect Network Access Manager" -f %TEMP%\NetworkAccessManager.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.txt</temp_out>
+          </action>
+          <action>
+            <path>%WINDIR%\system32</path>
+            <args>wevtutil epl "Cisco AnyConnect Network Access Manager" %TEMP%\NetworkAccessManager.evtx</args>
+            <clear_log apply="true">wevtutil cl "Cisco AnyConnect Network Access Manager"</clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.evtx</temp_out>
+          </action>
+          <action>
+            <plugin></plugin>
+            <args>acnampkgplugin.exe -f %TEMP%\NetworkAccessManagerPlugin.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManagerPlugin.txt</temp_out>
+          </action>
+        </use_extern_action>
+      </os>
+      <os opsys="winxp">
+        <file_copy_action>
+          <action>
+            <loc>%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.cap</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+        <use_extern_action>
+          <action>
+            <plugin></plugin>
+            <args>wineventlog.exe -d -l "Cisco AnyConnect Network Access Manager" -f %TEMP%\NetworkAccessManager.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.txt</temp_out>
+          </action>
+          <action>
+            <path>%WINDIR%\system32\wbem</path>
+            <args>wmic.exe nteventlog where " logfilename='Cisco AnyConnect Network Access Manager' " call backupeventlog "%TEMP%\NetworkAccessManager.evt"</args>
+            <clear_log apply="true">wmic.exe nteventlog where " logfilename='Cisco AnyConnect Network Access Manager' " call ClearEventLog</clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.evt</temp_out>
+          </action>
+          <action>
+            <plugin></plugin>
+            <args>acnampkgplugin.exe -f %TEMP%\NetworkAccessManagerPlugin.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManagerPlugin.txt</temp_out>
+          </action>
+        </use_extern_action>
+      </os>
+      <os opsys="win2k3">
+        <file_copy_action>
+          <action>
+            <loc>%ALLUSERSPROFILE%\Application Data\Cisco\Cisco AnyConnect Secure Mobility Client\Network Access Manager\logs\*.cap</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+        <use_extern_action>
+          <action>
+            <plugin></plugin>
+            <args>wineventlog.exe -d -l "Cisco AnyConnect Network Access Manager" -f %TEMP%\NetworkAccessManager.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.txt</temp_out>
+          </action>
+          <action>
+            <path>%WINDIR%\system32\wbem</path>
+            <args>wmic.exe nteventlog where " logfilename='Cisco AnyConnect Network Access Manager' " call backupeventlog "%TEMP%\NetworkAccessManager.evt"</args>
+            <clear_log apply="true">wmic.exe nteventlog where " logfilename='Cisco AnyConnect Network Access Manager' " call ClearEventLog</clear_log>
+            <temp_out>%TEMP%\NetworkAccessManager.evt</temp_out>
+          </action>
+          <action>
+            <plugin></plugin>
+            <args>acnampkgplugin.exe -f %TEMP%\NetworkAccessManagerPlugin.txt</args>
+            <clear_log apply="false"></clear_log>
+            <temp_out>%TEMP%\NetworkAccessManagerPlugin.txt</temp_out>
+          </action>
+        </use_extern_action>
+      </os>
+    </dart>
+  </file>
+  <file id="nam-fips">
+    <default>true</default>
+    <description>NAM FIPS debug files</description>
+    <gui>
+      <label>_tr("NAM FIPS")</label>
+      <file_type>log</file_type>
+    </gui>
+    <dart>
+      <required>false</required>
+      <os opsys="winxp">
+        <file_copy_action>
+          <action>
+            <loc>%SystemDrive%\3eTI-Drv-*.txt</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%WINDIR%\system32\drivers\CclDrvLog.txt</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+      <os opsys="win2k3">
+        <file_copy_action>
+          <action>
+            <loc>%SystemDrive%\3eTI-Drv-*.txt</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+          <action>
+            <loc>%WINDIR%\system32\drivers\CclDrvLog.txt</loc>
+            <clear_log apply="false"></clear_log>
+          </action>
+        </file_copy_action>
+      </os>
+    </dart>
+  </file>
+</configure>
