@@ -1,0 +1,448 @@
+{
+ "comments": [
+  {
+   "module": "vpnapi.dll",
+   "address": "0x3E4EE",
+   "manual": true,
+   "text": "something to do with connections"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x29782",
+   "manual": true,
+   "text": "receives and processes event (such as the password entered event)"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x58ECF",
+   "manual": true,
+   "text": "going to vpnapi here!!"
+  }
+ ],
+ "labels": [
+  {
+   "module": "vpncommon.dll",
+   "address": "0x3FE72",
+   "manual": true,
+   "text": "waitOnEventEntry_1"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x29782",
+   "manual": true,
+   "text": "WaitOnEventFunction"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x3FE17",
+   "manual": true,
+   "text": "WaitOnEvent_Entry"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x3FE35",
+   "manual": true,
+   "text": "SleepFunction"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x2983E",
+   "manual": true,
+   "text": "vpnapi_restrictWebLaunchModel"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x3FE56",
+   "manual": true,
+   "text": "WaitForObjectFunction"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x3FEDD",
+   "manual": true,
+   "text": "ProcessSignalEvent"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x29807",
+   "manual": true,
+   "text": "vpncommon_checkExpired"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x3FF03",
+   "manual": true,
+   "text": "vpncommon_LogReturnCode"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x3FF27",
+   "manual": true,
+   "text": "vpncommon_CheckOveralappedEvents"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x297EF",
+   "manual": true,
+   "text": "InterestingThingHappens"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x888BE",
+   "manual": true,
+   "text": "vpncommon_GetTickCount"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x888E0",
+   "manual": true,
+   "text": "vpncommon_MsgWaitForMultipleObjects"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x59470",
+   "manual": true,
+   "text": "vpnapi_CheckExpired"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x58EC0",
+   "manual": true,
+   "text": "vpnapi_WaitEvent"
+  },
+  {
+   "module": "vpncommon.dll",
+   "address": "0x888CD",
+   "manual": true,
+   "text": "Calls_MsgsWaitForMultipleObjects"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x2978C",
+   "manual": true,
+   "text": "waitOnEvent_1"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x297A6",
+   "manual": true,
+   "text": "waitOnEvent_2"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x297EC",
+   "manual": true,
+   "text": "waitOnEvent_3"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x29804",
+   "manual": true,
+   "text": "waitOnEvent_4"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x2983C",
+   "manual": true,
+   "text": "waitOnEvent_5"
+  },
+  {
+   "module": "vpnapi.dll",
+   "address": "0x5952F",
+   "manual": true,
+   "text": "callsLock_and_then_Unlock"
+  }
+ ],
+ "breakpoints": [
+  {
+   "address": "0x114192",
+   "enabled": false,
+   "oldbytes": "0x4C8B",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "kernelbase.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x2E6C7",
+   "enabled": true,
+   "oldbytes": "0x46A",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncommoncrypt.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x3ACC",
+   "enabled": false,
+   "oldbytes": "0x2868",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncli.exe",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x3AE8",
+   "enabled": false,
+   "oldbytes": "0x1468",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncli.exe",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x3B21",
+   "enabled": false,
+   "oldbytes": "0xF0B9",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncli.exe",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x3B48",
+   "enabled": false,
+   "oldbytes": "0xFBE8",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncli.exe",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x3B5E",
+   "enabled": false,
+   "oldbytes": "0x75E8",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncli.exe",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0xD07E",
+   "enabled": false,
+   "oldbytes": "0x8B55",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpnapi.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0xD086",
+   "enabled": false,
+   "oldbytes": "0x50FF",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpnapi.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0xF881",
+   "enabled": false,
+   "oldbytes": "0xEC8B",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpnapi.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x29782",
+   "enabled": false,
+   "oldbytes": "0x15FF",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpnapi.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x59470",
+   "enabled": false,
+   "oldbytes": "0x15FF",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpnapi.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x59476",
+   "enabled": false,
+   "oldbytes": "0x8589",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpnapi.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x3FE17",
+   "enabled": false,
+   "oldbytes": "0x8B55",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncommon.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x3FE56",
+   "enabled": false,
+   "oldbytes": "0x35E8",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "vpncommon.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x1E710",
+   "enabled": false,
+   "oldbytes": "0xFF8B",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "advapi32.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x5678F",
+   "enabled": false,
+   "oldbytes": "0xC88B",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "ntdll.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  },
+  {
+   "address": "0x742C1",
+   "enabled": false,
+   "oldbytes": "0xF6E8",
+   "type": 0,
+   "titantype": "0x0",
+   "name": "",
+   "module": "ntdll.dll",
+   "breakCondition": "",
+   "logText": "",
+   "logCondition": "",
+   "commandText": "",
+   "commandCondition": "",
+   "fastResume": false,
+   "silent": false
+  }
+ ],
+ "hashAlgorithm": "murmurhash",
+ "hash": "0x4E326924"
+}
